@@ -4,11 +4,18 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-anyhow = "1.0.104"
-glam = "0.34.1"
-thiserror = "2.0.21"
-wgpu = { version = "30.0.1", features = ["angle", "custom", "serde", "trace", "webgl", "wgpu-core"] }
-wgpu-core = { version = "30.0.1", features = ["wgsl"] }
-winit = "0.30.13"
+anyhow = "1"
+arrayref = "0.3"
+bytemuck = { version = "1", features = ["derive"] }
+env_logger = "0.11.11"
+glam = "0.34"
+log = { version = "0.4.34", features = ["serde"] }
+mint = "0.5.9"
+pollster = { version = "1", features = ["macro"] }
+thiserror = "2"
+wgpu = { version = "30", features = ["angle", "custom", "serde", "trace", "webgl", "wgpu-core"] }
+wgpu-core = { version = "30", features = ["wgsl"] }
+winit = "0.30"
+
 
 
